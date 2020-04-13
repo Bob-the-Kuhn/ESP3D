@@ -25,8 +25,8 @@
 //Customize ESP3D ////////////////////////////////////////////////////////////////////////
 #define ESP8266_MODEL_NAME "ESP8266"
 #define ESP8266_MODEL_URL "http://espressif.com/en/products/esp8266/"
-#define ESP32_MODEL_NAME "ESP32"
-#define ESP32_MODEL_URL "https://www.espressif.com/en/products/hardware/esp-wroom-32/overview"
+//#define ESP32_MODEL_NAME "ESP32"
+//#define ESP32_MODEL_URL "https://www.espressif.com/en/products/hardware/esp-wroom-32/overview"
 #define ESP_MODEL_NUMBER "ESP3D 2.1"
 #define ESP_MANUFACTURER_NAME "Espressif Systems"
 #define ESP_MANUFACTURER_URL "http://espressif.com"
@@ -34,7 +34,7 @@
 #define ESP_DEFAULT_NAME "MYESP"
 //if commented name will follow mac address 3 last digits
 //like ESP_XXXXXX (eg:ESP_028E41) to avoid overlap if several ESP3D
-#define ESP_HOST_NAME ESP_DEFAULT_NAME
+#define ESP_HOST_NAME ESP_CNC
 
 
 //FEATURES - comment to disable //////////////////////////////////////////////////////////
@@ -49,7 +49,7 @@
 #define TCP_IP_DATA_FEATURE
 
 //NOTIFICATION_FEATURE : allow to push notifications
-#define NOTIFICATION_FEATURE
+//#define NOTIFICATION_FEATURE
 
 //MKS TFT WIFI support see Wiki for wiring
 //#define MKS_TFT_FEATURE
@@ -89,12 +89,12 @@
 #define WS_DATA_FEATURE
 
 //TIMESTAMP_FEATURE: Time stamp feature on direct SD  files
-//#define TIMESTAMP_FEATURE
+#define TIMESTAMP_FEATURE
 
 //Extra features /////////////////////////////////////////////////////////////////////////
 
 //Workaround for Marlin 2.X coldstart
-//#define DISABLE_CONNECTING_MSG
+#define DISABLE_CONNECTING_MSG
 
 //Serial rx buffer size is 256 but can be extended
 #define SERIAL_RX_BUFFER_SIZE 512
